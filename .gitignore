@@ -1,3 +1,4 @@
 .env
 venv
 setup_phases.md
+/.idea
