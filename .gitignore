@@ -2,3 +2,6 @@
 venv
 setup_phases.md
 /.idea
+__pycache__/
+*.pyc
+*.pyo

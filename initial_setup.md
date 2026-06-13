@@ -43,6 +43,19 @@ pip install -r requirements.txt
 Create a `.env` file in the project root
 ---
  
+## Gitignore
+
+Make sure the following are listed in your `.gitignore` to avoid committing sensitive or environment-specific files:
+
+```gitignore
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.idea/
+```
 ## Database Setup
  
 Run migrations to initialize the database schema:
