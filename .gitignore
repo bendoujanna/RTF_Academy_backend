@@ -5,3 +5,4 @@ setup_phases.md
 __pycache__/
 *.pyc
 *.pyo
+firebase-credentials.json
