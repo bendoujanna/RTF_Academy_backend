@@ -1,0 +1,163 @@
+[
+{
+    "model": "users.userprofile",
+    "pk": "ADMIN_UID_123",
+    "fields": {
+        "password": "",
+        "email": "admin@rtfacademy.com",
+        "full_name": "RTF Admin",
+        "role": "Admin",
+        "last_login": null,
+        "created_at": "2026-06-17T00:31:37.168Z",
+        "is_active": true,
+        "is_admin": false
+    }
+},
+{
+    "model": "users.userprofile",
+    "pk": "STUDENT_UID_456",
+    "fields": {
+        "password": "",
+        "email": "student@rtfacademy.com",
+        "full_name": "Test Student",
+        "role": "Student",
+        "last_login": null,
+        "created_at": "2026-06-17T00:31:37.171Z",
+        "is_active": true,
+        "is_admin": false
+    }
+},
+{
+    "model": "users.userprofile",
+    "pk": "v3e6jLk8WfdIgRTiecVWt13Xt7d2",
+    "fields": {
+        "password": "!Lx96q5T9iYDySfrCk38vkdcOqve0tiQPXrzwyG2Z",
+        "email": "test@rtfacademy.com",
+        "full_name": "Test Student",
+        "role": "Student",
+        "last_login": null,
+        "created_at": "2026-06-14T20:54:06.655Z",
+        "is_active": true,
+        "is_admin": false
+    }
+},
+{
+    "model": "courses.course",
+    "pk": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
+    "fields": {
+        "title": "Backend Engineering Foundations",
+        "description": "Master REST APIs, PostgreSQL databases, and secure authentication.",
+        "thumbnail_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+        "is_published": true,
+        "created_at": "2026-06-17T00:31:37.173Z",
+        "updated_at": "2026-06-17T00:31:37.173Z"
+    }
+},
+{
+    "model": "courses.module",
+    "pk": "e060b53c-477b-463d-987b-25b8c4dad1f8",
+    "fields": {
+        "course": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
+        "title": "Phase 1: Identity & Security",
+        "sequence_order": 1
+    }
+},
+{
+    "model": "courses.lesson",
+    "pk": "ab1c8914-1233-412b-99e3-704d18b5d635",
+    "fields": {
+        "module": "e060b53c-477b-463d-987b-25b8c4dad1f8",
+        "title": "Understanding JWTs",
+        "text_content": "JWTs are cryptographic ID cards.",
+        "video_s3_url": null,
+        "sequence_order": 1,
+        "estimated_minutes": 15
+    }
+},
+{
+    "model": "quizzes.quiz",
+    "pk": "5a8eaeb7-d401-4da0-8bf1-91cdc848da6a",
+    "fields": {
+        "module": "e060b53c-477b-463d-987b-25b8c4dad1f8",
+        "title": "Security Fundamentals Quiz",
+        "passing_threshold": 80
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
+    "fields": {
+        "quiz": "5a8eaeb7-d401-4da0-8bf1-91cdc848da6a",
+        "question_text": "What does JWT stand for?"
+    }
+},
+{
+    "model": "quizzes.answerchoice",
+    "pk": "0c05fc51-3809-41e1-8cb1-8e75d0154885",
+    "fields": {
+        "question": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
+        "choice_text": "JSON Web Token",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.answerchoice",
+    "pk": "9b0d62d1-9b09-4e97-8885-6b47bf44c129",
+    "fields": {
+        "question": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
+        "choice_text": "Java Web Tracker",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.studentanswer",
+    "pk": "fb87ed96-6fa9-4d29-b6a2-c1dea689c10e",
+    "fields": {
+        "attempt": "c0fcfaee-3f50-44a1-8663-d3463e140493",
+        "question": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
+        "selected_choice": "0c05fc51-3809-41e1-8cb1-8e75d0154885"
+    }
+},
+{
+    "model": "progress.enrollment",
+    "pk": "50563bbf-051b-43a4-bf03-9ff0b9f3138e",
+    "fields": {
+        "student": "STUDENT_UID_456",
+        "course": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
+        "progress_percentage": 50,
+        "enrolled_at": "2026-06-17T00:34:18.512Z",
+        "is_completed": false
+    }
+},
+{
+    "model": "progress.lessoncompletion",
+    "pk": "af03674a-c695-4374-be9e-66e7ba5f523f",
+    "fields": {
+        "student": "STUDENT_UID_456",
+        "lesson": "ab1c8914-1233-412b-99e3-704d18b5d635",
+        "completed_at": "2026-06-17T00:34:18.517Z"
+    }
+},
+{
+    "model": "progress.quizattempt",
+    "pk": "c0fcfaee-3f50-44a1-8663-d3463e140493",
+    "fields": {
+        "student": "STUDENT_UID_456",
+        "quiz": "5a8eaeb7-d401-4da0-8bf1-91cdc848da6a",
+        "score": 100,
+        "passed": true,
+        "attempted_at": "2026-06-17T00:34:18.521Z"
+    }
+},
+{
+    "model": "certificates.certificate",
+    "pk": "a595804b-1a84-4019-afe7-c2f234ca3cad",
+    "fields": {
+        "student": "STUDENT_UID_456",
+        "course": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
+        "verification_code": "RTF-CERT-889900",
+        "pdf_s3_url": "https://s3.amazonaws.com/cert.pdf",
+        "issued_at": "2026-06-17T00:34:18.528Z"
+    }
+}
+]
