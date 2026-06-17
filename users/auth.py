@@ -27,13 +27,18 @@ class FirebaseAuthentication(BaseAuthentication):
         try:
             decoded_token = auth.verify_id_token(id_token)
             uid = decoded_token.get('uid')
+            email = decoded_token.get('email', '')
         except Exception:
             raise AuthenticationFailed('Invalid or expired Firebase token.')
 
-        # look up the corresponding user in database
         try:
             user = UserProfile.objects.get(uid=uid)
         except UserProfile.DoesNotExist:
-            raise AuthenticationFailed('Account not provisioned. Please contact an Administrator to enroll.')
+            user = UserProfile.objects.create(
+                uid=uid,
+                email=email,
+                role='Student',
+                full_name=email.split('@')[0]
+            )
 
         return (user, None)
