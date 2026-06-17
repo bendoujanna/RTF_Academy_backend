@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'quizzes',
     'progress',
     'certificates',
+    'core',
 ]
 
 MIDDLEWARE = [
