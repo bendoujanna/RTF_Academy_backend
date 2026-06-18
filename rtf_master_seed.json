@@ -3,12 +3,12 @@
     "model": "users.userprofile",
     "pk": "ADMIN_UID_123",
     "fields": {
-        "password": "",
+        "password": "!ljC8SAlliZJMeNigDRoeGBLzy4lr9QOvi8JTCuIw",
         "email": "admin@rtfacademy.com",
         "full_name": "RTF Admin",
         "role": "Admin",
         "last_login": null,
-        "created_at": "2026-06-17T00:31:37.168Z",
+        "created_at": "2026-06-18T14:41:31.427Z",
         "is_active": true,
         "is_admin": false
     }
@@ -17,12 +17,12 @@
     "model": "users.userprofile",
     "pk": "STUDENT_UID_456",
     "fields": {
-        "password": "",
+        "password": "!xuYkBCou1jJfSbs9tftnAykCFXhMtEDBIwmQmDp2",
         "email": "student@rtfacademy.com",
         "full_name": "Test Student",
         "role": "Student",
         "last_login": null,
-        "created_at": "2026-06-17T00:31:37.171Z",
+        "created_at": "2026-06-18T14:41:31.437Z",
         "is_active": true,
         "is_admin": false
     }
@@ -43,32 +43,32 @@
 },
 {
     "model": "courses.course",
-    "pk": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
+    "pk": "4e63ac01-d189-4af0-ae97-5deebe4a7955",
     "fields": {
-        "title": "Backend Engineering Foundations",
-        "description": "Master REST APIs, PostgreSQL databases, and secure authentication.",
+        "title": "Digital Literacy for Refugee Youth",
+        "description": "Master essential computer, internet, and productivity skills.",
         "thumbnail_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
         "is_published": true,
-        "created_at": "2026-06-17T00:31:37.173Z",
-        "updated_at": "2026-06-17T00:31:37.173Z"
+        "created_at": "2026-06-18T14:41:31.440Z",
+        "updated_at": "2026-06-18T14:41:31.440Z"
     }
 },
 {
     "model": "courses.module",
-    "pk": "e060b53c-477b-463d-987b-25b8c4dad1f8",
+    "pk": "59f2611e-0c95-4289-bbcc-a65269278e80",
     "fields": {
-        "course": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
-        "title": "Phase 1: Identity & Security",
+        "course": "4e63ac01-d189-4af0-ae97-5deebe4a7955",
+        "title": "Module 1: Introduction to Computers",
         "sequence_order": 1
     }
 },
 {
     "model": "courses.lesson",
-    "pk": "ab1c8914-1233-412b-99e3-704d18b5d635",
+    "pk": "df3535c6-77a0-4100-9f34-6ce713276b2b",
     "fields": {
-        "module": "e060b53c-477b-463d-987b-25b8c4dad1f8",
-        "title": "Understanding JWTs",
-        "text_content": "JWTs are cryptographic ID cards.",
+        "module": "59f2611e-0c95-4289-bbcc-a65269278e80",
+        "title": "What is a Computer?",
+        "text_content": "A computer is an electronic device that processes data.",
         "video_s3_url": null,
         "sequence_order": 1,
         "estimated_minutes": 15
@@ -76,88 +76,88 @@
 },
 {
     "model": "quizzes.quiz",
-    "pk": "5a8eaeb7-d401-4da0-8bf1-91cdc848da6a",
+    "pk": "1f66b64d-a974-4703-a77b-c945a9e3b153",
     "fields": {
-        "module": "e060b53c-477b-463d-987b-25b8c4dad1f8",
-        "title": "Security Fundamentals Quiz",
+        "module": "59f2611e-0c95-4289-bbcc-a65269278e80",
+        "title": "Computer Basics Quiz",
         "passing_threshold": 80
     }
 },
 {
     "model": "quizzes.question",
-    "pk": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
+    "pk": "66c4a9eb-bdac-4b2c-aa90-d76581297db7",
     "fields": {
-        "quiz": "5a8eaeb7-d401-4da0-8bf1-91cdc848da6a",
-        "question_text": "What does JWT stand for?"
+        "quiz": "1f66b64d-a974-4703-a77b-c945a9e3b153",
+        "question_text": "Which of the following is computer hardware?"
     }
 },
 {
     "model": "quizzes.answerchoice",
-    "pk": "0c05fc51-3809-41e1-8cb1-8e75d0154885",
+    "pk": "7144a0d8-ea8d-4400-bbe3-57251fdc47a6",
     "fields": {
-        "question": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
-        "choice_text": "JSON Web Token",
+        "question": "66c4a9eb-bdac-4b2c-aa90-d76581297db7",
+        "choice_text": "Keyboard",
         "is_correct": true
     }
 },
 {
     "model": "quizzes.answerchoice",
-    "pk": "9b0d62d1-9b09-4e97-8885-6b47bf44c129",
+    "pk": "a81339ae-2a98-4f09-8c64-218e12944e1a",
     "fields": {
-        "question": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
-        "choice_text": "Java Web Tracker",
+        "question": "66c4a9eb-bdac-4b2c-aa90-d76581297db7",
+        "choice_text": "Web Browser",
         "is_correct": false
     }
 },
 {
     "model": "quizzes.studentanswer",
-    "pk": "fb87ed96-6fa9-4d29-b6a2-c1dea689c10e",
+    "pk": "daae1730-27a3-4d1e-8c1a-6649800c437b",
     "fields": {
-        "attempt": "c0fcfaee-3f50-44a1-8663-d3463e140493",
-        "question": "1fc4ae2c-7af0-4caa-bd35-b95be001b323",
-        "selected_choice": "0c05fc51-3809-41e1-8cb1-8e75d0154885"
+        "attempt": "8955f9c5-bdbb-43b3-b20a-fa9b4b68fbb1",
+        "question": "66c4a9eb-bdac-4b2c-aa90-d76581297db7",
+        "selected_choice": "7144a0d8-ea8d-4400-bbe3-57251fdc47a6"
     }
 },
 {
     "model": "progress.enrollment",
-    "pk": "50563bbf-051b-43a4-bf03-9ff0b9f3138e",
+    "pk": "bdbf4d8c-9b11-47a0-b4dc-3e642c127b8f",
     "fields": {
         "student": "STUDENT_UID_456",
-        "course": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
-        "progress_percentage": 50,
-        "enrolled_at": "2026-06-17T00:34:18.512Z",
-        "is_completed": false
+        "course": "4e63ac01-d189-4af0-ae97-5deebe4a7955",
+        "progress_percentage": 100,
+        "enrolled_at": "2026-06-18T14:41:31.483Z",
+        "is_completed": true
     }
 },
 {
     "model": "progress.lessoncompletion",
-    "pk": "af03674a-c695-4374-be9e-66e7ba5f523f",
+    "pk": "fdfb3733-bdee-45d8-b0c8-c91fbe1cb137",
     "fields": {
         "student": "STUDENT_UID_456",
-        "lesson": "ab1c8914-1233-412b-99e3-704d18b5d635",
-        "completed_at": "2026-06-17T00:34:18.517Z"
+        "lesson": "df3535c6-77a0-4100-9f34-6ce713276b2b",
+        "completed_at": "2026-06-18T14:41:31.478Z"
     }
 },
 {
     "model": "progress.quizattempt",
-    "pk": "c0fcfaee-3f50-44a1-8663-d3463e140493",
+    "pk": "8955f9c5-bdbb-43b3-b20a-fa9b4b68fbb1",
     "fields": {
         "student": "STUDENT_UID_456",
-        "quiz": "5a8eaeb7-d401-4da0-8bf1-91cdc848da6a",
+        "quiz": "1f66b64d-a974-4703-a77b-c945a9e3b153",
         "score": 100,
         "passed": true,
-        "attempted_at": "2026-06-17T00:34:18.521Z"
+        "attempted_at": "2026-06-18T14:41:31.469Z"
     }
 },
 {
     "model": "certificates.certificate",
-    "pk": "a595804b-1a84-4019-afe7-c2f234ca3cad",
+    "pk": "b6423fa1-d8df-439b-97d5-3652a34687de",
     "fields": {
         "student": "STUDENT_UID_456",
-        "course": "c48f31f7-7e35-4871-84c1-348e1ccdbff3",
+        "course": "4e63ac01-d189-4af0-ae97-5deebe4a7955",
         "verification_code": "RTF-CERT-889900",
         "pdf_s3_url": "https://s3.amazonaws.com/cert.pdf",
-        "issued_at": "2026-06-17T00:34:18.528Z"
+        "issued_at": "2026-06-18T14:41:31.487Z"
     }
 }
 ]

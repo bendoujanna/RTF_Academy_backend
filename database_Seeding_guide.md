@@ -10,27 +10,27 @@ Our PostgreSQL database is logically divided into 4 primary domains:
 
 ###  Identity Domain (`users` app)
 
-- **`UserProfile`** — The core user table linked to Firebase. Contains `uid` (Firebase ID), `email`, `full_name`, and `role` (Admin/Student).
+- **`UserProfile`** : The core user table linked to Firebase. Contains `uid` (Firebase ID), `email`, `full_name`, and `role` (Admin/Student).
 
 ###  Content Domain (`courses` app)
 
-- **`Course`** — The top-level LMS entity (Title, Description, Published Status).
-- **`Module`** — Groupings within a course.
-- **`Lesson`** — Individual learning materials (Text/Video) linked to a Module.
+- **`Course`** : The top-level LMS entity (Title, Description, Published Status).
+- **`Module`** : Groupings within a course.
+- **`Lesson`** : Individual learning materials (Text/Video) linked to a Module.
 
 ###  Assessment Domain (`quizzes` app)
 
-- **`Quiz`** — Linked to a specific Module. Defines the passing threshold.
-- **`Question`** — Linked to a Quiz.
-- **`AnswerChoice`** — Linked to a Question. Includes the `is_correct` boolean flag.
+- **`Quiz`** : Linked to a specific Module. Defines the passing threshold.
+- **`Question`** : Linked to a Quiz.
+- **`AnswerChoice`** : Linked to a Question. Includes the `is_correct` boolean flag.
 
 ### Progress and Records Domain (`progress` and `certificates` apps)
 
-- **`Enrollment`** — Links a Student to a Course, tracking overall percentage.
-- **`LessonCompletion`** — Tracks exactly which lessons a student has finished.
-- **`QuizAttempt`** — Records the score and pass/fail status of a quiz taken by a student.
-- **`StudentAnswer`** — (Linked to `QuizAttempt`) Records the exact choices a student made on a quiz.
-- **`Certificate`** — The final issued credential, containing a unique verification code and S3 PDF link.
+- **`Enrollment`** : Links a Student to a Course, tracking overall percentage.
+- **`LessonCompletion`** : Tracks exactly which lessons a student has finished.
+- **`QuizAttempt`** : Records the score and pass/fail status of a quiz taken by a student.
+- **`StudentAnswer`** : (Linked to `QuizAttempt`) Records the exact choices a student made on a quiz.
+- **`Certificate`** : The final issued credential, containing a unique verification code and S3 PDF link.
 
 ---
 

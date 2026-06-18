@@ -28,17 +28,20 @@ class FirebaseAuthentication(BaseAuthentication):
             decoded_token = auth.verify_id_token(id_token)
             uid = decoded_token.get('uid')
             email = decoded_token.get('email', '')
+            google_name = decoded_token.get('name')
         except Exception:
             raise AuthenticationFailed('Invalid or expired Firebase token.')
 
         try:
             user = UserProfile.objects.get(uid=uid)
         except UserProfile.DoesNotExist:
+            final_name = google_name if google_name else email.split('@')[0]
+
             user = UserProfile.objects.create(
                 uid=uid,
                 email=email,
                 role='Student',
-                full_name=email.split('@')[0]
+                full_name=final_name
             )
 
         return (user, None)

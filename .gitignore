@@ -6,3 +6,4 @@ __pycache__/
 *.pyc
 *.pyo
 firebase-credentials.json
+core/management/commands/unseed_db.py
