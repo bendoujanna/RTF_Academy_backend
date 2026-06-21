@@ -1,4 +1,5 @@
 import firebase_admin
+import os
 from firebase_admin import auth, credentials
 from rest_framework.authentication import BaseAuthentication
 from rest_framework.exceptions import AuthenticationFailed
@@ -7,8 +8,11 @@ from .models import UserProfile
 
 # initialize the Firebase Admin SDK
 if not firebase_admin._apps:
-    cred = credentials.Certificate(settings.FIREBASE_CREDENTIALS_PATH)
-    firebase_admin.initialize_app(cred)
+    if hasattr(settings, 'FIREBASE_CREDENTIALS_PATH') and os.path.exists(settings.FIREBASE_CREDENTIALS_PATH):
+        cred = credentials.Certificate(settings.FIREBASE_CREDENTIALS_PATH)
+        firebase_admin.initialize_app(cred)
+    else:
+        print("Firebase credentials not found. Skipping initialization.")
 
 class FirebaseAuthentication(BaseAuthentication):
     def authenticate(self, request):
