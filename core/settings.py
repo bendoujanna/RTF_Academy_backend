@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 from urllib.parse import urlparse
 from dotenv import load_dotenv
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,8 +29,13 @@ SECRET_KEY = 'django-insecure-lw+7$kejxxg)g_lwh$4jdp#3&!5cr_0qu=2+*@q3-@1v0-v&2-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# core/settings.py
 
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'rtf-academy-backend.onrender.com',
+]
 
 # Application definition
 
@@ -95,17 +101,25 @@ FIREBASE_CREDENTIALS_PATH = os.getenv('FIREBASE_CREDENTIALS_PATH')
 
 tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': tmpPostgres.path.replace('/', ''),
-        'USER': tmpPostgres.username,
-        'PASSWORD': tmpPostgres.password,
-        'HOST': tmpPostgres.hostname,
-        'PORT': tmpPostgres.port or 5432,
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': tmpPostgres.path.replace('/', ''),
+#         'USER': tmpPostgres.username,
+#         'PASSWORD': tmpPostgres.password,
+#         'HOST': tmpPostgres.hostname,
+#         'PORT': tmpPostgres.port or 5432,
+#     }
+# }
 
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'),
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
