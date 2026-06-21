@@ -6,10 +6,11 @@ from rest_framework.exceptions import AuthenticationFailed
 from django.conf import settings
 from .models import UserProfile
 
+firebase_path = getattr(settings, 'FIREBASE_CREDENTIALS_PATH', None)
 # initialize the Firebase Admin SDK
 if not firebase_admin._apps:
-    if hasattr(settings, 'FIREBASE_CREDENTIALS_PATH') and os.path.exists(settings.FIREBASE_CREDENTIALS_PATH):
-        cred = credentials.Certificate(settings.FIREBASE_CREDENTIALS_PATH)
+    if firebase_path and os.path.exists(firebase_path):
+        cred = credentials.Certificate(firebase_path)
         firebase_admin.initialize_app(cred)
     else:
         print("Firebase credentials not found. Skipping initialization.")
