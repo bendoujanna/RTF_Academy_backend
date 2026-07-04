@@ -159,6 +159,7 @@ STATIC_URL = 'static/'
 
 # Django REST Framework Global Settings
 REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'core.exceptions.rtf_academy_exception_handler',
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'users.auth.FirebaseAuthentication',
     ],
@@ -166,3 +167,31 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ]
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'WARNING',
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'core': {
+            'handlers': ['console'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+    },
+}
+
+AUTH_USER_MODEL = 'users.UserProfile'
