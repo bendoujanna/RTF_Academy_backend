@@ -101,3 +101,64 @@ class CourseDetailSerializer(serializers.ModelSerializer):
         if request and request.user and request.user.is_authenticated:
             return 0
         return 0
+    
+
+class CourseCreateUpdateSerializer(serializers.ModelSerializer):
+   modules = ModuleSerializer(many=True, required=False)
+  
+   class Meta:
+       model = Course
+       fields = [
+           'id',
+           'title',
+           'description',
+           'thumbnail_url',
+           'is_published',
+           'modules',
+       ]
+       read_only_fields = ['id', 'created_at', 'updated_at']
+  
+   def create(self, validated_data):
+       modules_data = validated_data.pop('modules', [])
+
+
+       course = Course.objects.create(**validated_data)
+
+
+       for module_data in modules_data:
+           lessons_data = module_data.pop('lessons', [])
+
+
+           module = Module.objects.create(course=course, **module_data)
+
+
+           for lesson_data in lessons_data:
+               Lesson.objects.create(module=module, **lesson_data)
+
+
+       return course
+  
+   def update(self, instance, validated_data):
+       modules_data = validated_data.pop('modules', None)
+
+
+       for attr, value in validated_data.items():
+           setattr(instance, attr, value)
+       instance.save()
+
+
+       if modules_data is not None:
+           # Replacing nested modules keeps writes deterministic but resets nested IDs.
+           instance.modules.all().delete()
+
+
+           for module_data in modules_data:
+               lessons_data = module_data.pop('lessons', [])
+               module = Module.objects.create(course=instance, **module_data)
+
+
+               for lesson_data in lessons_data:
+                   Lesson.objects.create(module=module, **lesson_data)
+
+
+       return instance
