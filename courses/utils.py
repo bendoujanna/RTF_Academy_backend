@@ -62,8 +62,6 @@ def calculate_progress(student, course):
         student=student, lesson__module__course=course
     ).count()
 
-    # Bug fix: use filter(quiz__isnull=False) instead of exclude(quiz__isnull=True)
-    # to avoid Django's known quirk with exclude() + null checks on reverse relations
     modules_with_quiz = list(
         Module.objects.filter(course=course, quiz__isnull=False)
     )
