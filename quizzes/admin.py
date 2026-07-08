@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from progress.models import QuizAttempt
+from .models import Quiz, Question, AnswerChoice, StudentAnswer
+
+admin.site.register([Quiz, Question, AnswerChoice, StudentAnswer])
