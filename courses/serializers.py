@@ -174,8 +174,6 @@ class AdminCourseDetailSerializer(serializers.ModelSerializer):
 
 
 class CourseCreateUpdateSerializer(serializers.ModelSerializer):
-    modules = AdminModuleSerializer(many=True, required=False)
-
     class Meta:
         model = Course
         fields = [
@@ -184,29 +182,40 @@ class CourseCreateUpdateSerializer(serializers.ModelSerializer):
             'description',
             'thumbnail_url',
             'is_published',
-            'modules',
         ]
         read_only_fields = ['id', 'created_at', 'updated_at']
 
     def create(self, validated_data):
-        modules_data = validated_data.pop('modules', [])
-
-        course = Course.objects.create(**validated_data)
-
-        for module_data in modules_data:
-            lessons_data = module_data.pop('lessons', [])
-            module = Module.objects.create(course=course, **module_data)
-
-            for lesson_data in lessons_data:
-                Lesson.objects.create(module=module, **lesson_data)
-
-        return course
+        return Course.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
-        validated_data.pop('modules', None)  # Ignore nested modules on update
-
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
         instance.save()
 
         return instance
+
+
+class ModuleWriteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Module
+        fields = [
+            'id',
+            'title',
+            'sequence_order',
+        ]
+        read_only_fields = ['id']
+
+
+class LessonWriteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Lesson
+        fields = [
+            'id',
+            'title',
+            'text_content',
+            'video_s3_url',
+            'sequence_order',
+            'estimated_minutes',
+        ]
+        read_only_fields = ['id']
