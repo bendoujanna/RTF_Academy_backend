@@ -62,4 +62,4 @@ class IsAdminRole(BasePermission):
         if not request.user or not request.user.is_authenticated:
             return False
 
-        return request.user.is_admin
+        return getattr(request.user, "role", None) == "Admin"
