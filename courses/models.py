@@ -5,6 +5,7 @@ class Course(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
+    outcomes = models.JSONField(default=list, blank=True, help_text='List of learning outcomes (strings)')
     thumbnail_url = models.URLField(blank=True, null=True)
     is_published = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
