@@ -40,20 +40,25 @@ class FirebaseAuthentication(BaseAuthentication):
         google_name = decoded_token.get('name')
 
         if not uid:
-             raise AuthenticationFailed("Token is missing the uid claim.")
+            raise AuthenticationFailed("Token is missing the uid claim.")
 
         try:
             user = UserProfile.objects.get(uid=uid)
         except UserProfile.DoesNotExist:
-            final_name = google_name if google_name else email.split('@')[0]
-            user = UserProfile.objects.create(
-                uid=uid,
-                email=email,
-                role='Student',
-                full_name=final_name
-            )
+
+            if email and UserProfile.objects.filter(email=email).exists():
+                UserProfile.objects.filter(email=email).update(uid=uid)
+                user = UserProfile.objects.get(uid=uid)
+            else:
+                final_name = google_name if google_name else email.split('@')[0]
+                user = UserProfile.objects.create_user(
+                    uid=uid,
+                    email=email,
+                    role='Student',
+                    full_name=final_name
+                )
 
         if not user.is_active:
-             raise AuthenticationFailed("This account has been deactivated. Please contact support.")
+            raise AuthenticationFailed("This account has been deactivated. Please contact support.")
 
         return (user, None)
