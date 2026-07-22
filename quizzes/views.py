@@ -1,9 +1,21 @@
-from rest_framework import permissions, status
+from django.db.models import Prefetch
+from django.shortcuts import get_object_or_404
+from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.db import transaction
+from courses.models import Module
+from users.permissions import IsAdminRole
 from .models import Quiz, Question, AnswerChoice, StudentAnswer
-from .serializers import QuizStudentSerializer, QuizAttemptResultSerializer
+from .serializers import (
+    QuizStudentSerializer,
+    QuizAttemptResultSerializer,
+    AdminQuizDetailSerializer,
+    AdminQuizListSerializer,
+    QuizWriteSerializer,
+    AdminQuestionSerializer,
+    QuestionWriteSerializer,
+)
 from progress.models import Enrollment, QuizAttempt
 from courses.utils import get_locked_modules, calculate_progress, is_course_complete
 from certificates.utils import generate_certificate
@@ -189,3 +201,100 @@ class QuizResultView(APIView):
             )
 
         return Response(QuizAttemptResultSerializer(attempts, many=True).data)
+
+
+def _quiz_base_queryset():
+    return Quiz.objects.select_related('module__course').prefetch_related(
+        Prefetch('questions', queryset=Question.objects.prefetch_related('choices'))
+    )
+
+
+class AdminModuleQuizCreateView(APIView):
+    """
+    POST /api/assessments/admin/modules/{module_id}/quiz/
+    Creates the quiz for a module. A module may have at most one quiz.
+    """
+    permission_classes = [permissions.IsAuthenticated, IsAdminRole]
+
+    def post(self, request, module_id):
+        module = get_object_or_404(Module, pk=module_id)
+        if Quiz.objects.filter(module=module).exists():
+            return Response(
+                {'detail': 'This module already has a quiz.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        serializer = QuizWriteSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        quiz = serializer.save(module=module)
+        return Response(AdminQuizDetailSerializer(quiz).data, status=status.HTTP_201_CREATED)
+
+
+class AdminQuizListView(generics.ListAPIView):
+    """GET /api/assessments/admin/quizzes/"""
+    serializer_class = AdminQuizListSerializer
+    permission_classes = [permissions.IsAuthenticated, IsAdminRole]
+    queryset = _quiz_base_queryset().order_by('module__course__title', 'module__sequence_order')
+
+
+class AdminQuizDetailView(APIView):
+    """
+    GET/PUT/DELETE /api/assessments/admin/quizzes/{quiz_id}/
+    """
+    permission_classes = [permissions.IsAuthenticated, IsAdminRole]
+
+    def _get_quiz(self, pk):
+        return get_object_or_404(_quiz_base_queryset(), pk=pk)
+
+    def get(self, request, pk):
+        return Response(AdminQuizDetailSerializer(self._get_quiz(pk)).data)
+
+    def put(self, request, pk):
+        quiz = self._get_quiz(pk)
+        serializer = QuizWriteSerializer(quiz, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        quiz = serializer.save()
+        return Response(AdminQuizDetailSerializer(quiz).data)
+
+    def delete(self, request, pk):
+        quiz = self._get_quiz(pk)
+        quiz.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class AdminQuizQuestionCreateView(APIView):
+    permission_classes = [permissions.IsAuthenticated, IsAdminRole]
+
+    @transaction.atomic
+    def post(self, request, quiz_id):
+        quiz = get_object_or_404(Quiz, pk=quiz_id)
+        serializer = QuestionWriteSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        question = serializer.save(quiz=quiz)
+        return Response(AdminQuestionSerializer(question).data, status=status.HTTP_201_CREATED)
+
+
+class AdminQuestionDetailView(APIView):
+    """
+    PUT/DELETE /api/assessments/admin/questions/{question_id}/
+    PUT replaces the question text and its full set of choices in one request.
+    """
+    permission_classes = [permissions.IsAuthenticated, IsAdminRole]
+
+    def _get_question(self, pk):
+        return get_object_or_404(
+            Question.objects.select_related('quiz').prefetch_related('choices'), pk=pk
+        )
+
+    @transaction.atomic
+    def put(self, request, pk):
+        question = self._get_question(pk)
+        serializer = QuestionWriteSerializer(question, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        question = serializer.save()
+        return Response(AdminQuestionSerializer(question).data)
+
+    def delete(self, request, pk):
+        question = self._get_question(pk)
+        question.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
