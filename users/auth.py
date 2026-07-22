@@ -16,6 +16,9 @@ if not firebase_admin._apps:
         print("Firebase credentials not found. Skipping initialization.")
 
 class FirebaseAuthentication(BaseAuthentication):
+    def authenticate_header(self, request):
+        return 'Bearer'
+
     def authenticate(self, request):
         auth_header = request.headers.get("Authorization", "")
 

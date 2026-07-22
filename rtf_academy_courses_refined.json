@@ -1,0 +1,1790 @@
+{
+  "courses": [
+    {
+      "title": "English Language Essentials",
+      "description": "This course equips learners with essential English communication skills for academic, professional, and everyday contexts. It focuses on developing competence in listening, speaking, reading, writing, grammar, and vocabulary through interactive lessons and practical activities.",
+      "is_published": true,
+      "modules": [
+        {
+          "title": "Introduction to English Communication",
+          "sequence_order": 1,
+          "lessons": [
+            {
+              "title": "Importance of English Communication",
+              "sequence_order": 1,
+              "text_content": "Communication is one of the crucial life skills that helps humans interact, share ideas, feelings, and thoughts, resolve problems, and establish relationships. This module introduces learners to the importance of English communication and lays the basis for understanding how the language works through parts of speech.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            },
+            {
+              "title": "Parts of Speech",
+              "sequence_order": 2,
+              "text_content": "Communication is one of the crucial life skills that helps humans interact, share ideas, feelings, and thoughts, resolve problems, and establish relationships. This module introduces learners to the importance of English communication and lays the basis for understanding how the language works through parts of speech.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Introduction to English Communication — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "What is the main purpose of communication?",
+                "choices": [
+                  {
+                    "choice_text": "To entertain people",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To share ideas and information",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "To write stories",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To learn mathematics",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which language is widely used for international communication?",
+                "choices": [
+                  {
+                    "choice_text": "French",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "English",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Swahili",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Arabic",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is a benefit of learning English?",
+                "choices": [
+                  {
+                    "choice_text": "Better job opportunities",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Improved communication",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Access to global information",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "All of the above",
+                    "is_correct": true
+                  }
+                ]
+              },
+              {
+                "question_text": "Communication helps people:",
+                "choices": [
+                  {
+                    "choice_text": "Build relationships",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Solve problems",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Share ideas",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "All of the above",
+                    "is_correct": true
+                  }
+                ]
+              },
+              {
+                "question_text": "Why is English important in education?",
+                "choices": [
+                  {
+                    "choice_text": "It is the language of many textbooks and research materials.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "It replaces all other languages.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It is only used in schools.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It is only spoken in one country.",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "In the sentence 'The teacher explained the lesson,' what part of speech is 'teacher'?",
+                "choices": [
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adverb",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "In the sentence 'She is happy today,' what part of speech is 'happy'?",
+                "choices": [
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "In the sentence 'They run every morning,' what part of speech is 'run'?",
+                "choices": [
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "In the sentence 'He speaks clearly,' what part of speech is 'clearly'?",
+                "choices": [
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adverb",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "In the sentence 'They completed the assignment,' what part of speech is 'assignment'?",
+                "choices": [
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adverb",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "A word that names a person, place, or thing is called a:",
+                "choices": [
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Adverb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "A word that replaces a noun is called a:",
+                "choices": [
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adverb",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "A word that describes a noun is called an:",
+                "choices": [
+                  {
+                    "choice_text": "Adverb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "A word that shows action is a:",
+                "choices": [
+                  {
+                    "choice_text": "Verb",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "A word that describes a verb is an:",
+                "choices": [
+                  {
+                    "choice_text": "Adjective",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Adverb",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Noun",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Pronoun",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Grammar Essentials",
+          "sequence_order": 2,
+          "lessons": [
+            {
+              "title": "Sentence Structure, Tenses, Punctuation & Capitalization",
+              "sequence_order": 1,
+              "text_content": "Grammar gives the rules for communication to be clear and meaningful. This module covers sentence structure, verb tenses, subject-verb agreement, punctuation, and capitalization.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Grammar Essentials — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "Which sentence is correct?",
+                "choices": [
+                  {
+                    "choice_text": "She goes to school.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "She go to school.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "She is going to school.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "She went to school (referring to now).",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which punctuation ends a question?",
+                "choices": [
+                  {
+                    "choice_text": ".",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": ",",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "?",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "!",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which sentence uses capitalization correctly?",
+                "choices": [
+                  {
+                    "choice_text": "i live in Rwanda.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "I live in Rwanda.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "I live in rwanda.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "i Live in Rwanda.",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Choose the correct verb: 'The students _____ studying.'",
+                "choices": [
+                  {
+                    "choice_text": "is",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "are",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "was",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "am",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which sentence is complete?",
+                "choices": [
+                  {
+                    "choice_text": "Running fast.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The children played football.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "After school.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Because it rained.",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which is the correctly written version of: 'my brother likes football.'?",
+                "choices": [
+                  {
+                    "choice_text": "My brother likes football.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "my brother like football.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "My Brother likes football",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "my brother likes football",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which is the correctly written version of: 'she have two books.'?",
+                "choices": [
+                  {
+                    "choice_text": "She have two books.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "She has two books.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "she has two books",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "She having two books.",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which is the correctly written version of: 'where are you going.'?",
+                "choices": [
+                  {
+                    "choice_text": "where are you going?",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Where are you going.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Where are you going?",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Where you going?",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which is the correctly written version of: 'the dogs barks loudly.'?",
+                "choices": [
+                  {
+                    "choice_text": "The dogs barks loudly.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The dogs bark loudly.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "the dogs bark loudly",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The dog's bark loudly.",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which is the correctly written version of: 'i visited kenya last year.'?",
+                "choices": [
+                  {
+                    "choice_text": "I visited kenya last year.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "i visited Kenya last year.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "I visited Kenya last year.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "I visit Kenya last year.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Reading Skills",
+          "sequence_order": 3,
+          "lessons": [
+            {
+              "title": "Reading Strategies & Comprehension",
+              "sequence_order": 1,
+              "text_content": "Reading is a great way to learn, expand vocabulary, and develop critical thinking. This module covers reading strategies, identifying main ideas, and making inferences.",
+              "video_s3_url": "https://youtube.com/shorts/zPXlnqVYwsE?si=PU61F0uaBRk1haQ_",
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Reading Skills — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "What is the 'main idea' of a passage?",
+                "choices": [
+                  {
+                    "choice_text": "A minor detail mentioned once",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The central point the passage is making",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "The title of the passage",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The last sentence only",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What are 'supporting details' in a text?",
+                "choices": [
+                  {
+                    "choice_text": "Facts and examples that back up the main idea",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Unrelated information",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The author's name",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Grammar mistakes in the text",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What does it mean to 'make an inference' while reading?",
+                "choices": [
+                  {
+                    "choice_text": "Copying the text word for word",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Drawing a conclusion based on clues in the text",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Ignoring unfamiliar words",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Reading the passage backwards",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "How can you determine the meaning of an unfamiliar word while reading?",
+                "choices": [
+                  {
+                    "choice_text": "Skip the word entirely",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Use context clues from surrounding sentences",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Guess randomly",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Stop reading",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Why is identifying the main idea important when reading?",
+                "choices": [
+                  {
+                    "choice_text": "It helps learners understand and comprehend information more effectively",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "It makes the passage longer",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It is not important",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It only matters for fiction",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Writing Skills",
+          "sequence_order": 4,
+          "lessons": [
+            {
+              "title": "Paragraphs, Essays, Emails & Editing",
+              "sequence_order": 1,
+              "text_content": "Writing is an effective way of communicating in the classroom, workplace, and daily life. This module covers paragraph writing, essay writing, professional emails, report writing, editing and proofreading.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Writing Skills — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "What is the recommended word count for a short descriptive paragraph in this lesson?",
+                "choices": [
+                  {
+                    "choice_text": "10-20 words",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "100-120 words",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "500-600 words",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "1000+ words",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What is the main goal of an essay such as 'The Importance of Education'?",
+                "choices": [
+                  {
+                    "choice_text": "To list random facts with no structure",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To present a clear argument supported by reasoning and examples",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "To copy another writer's work",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To use as many big words as possible",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What should a professional email requesting information include?",
+                "choices": [
+                  {
+                    "choice_text": "A clear subject line and specific request details",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Only a greeting with no request",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Slang and abbreviations",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "No closing signature",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What is the purpose of editing and proofreading written work?",
+                "choices": [
+                  {
+                    "choice_text": "To make the text longer",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To correct grammar, punctuation, and spelling errors",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "To remove all punctuation",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To translate the text",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which skill ensures written work is accurate and well presented?",
+                "choices": [
+                  {
+                    "choice_text": "Editing and proofreading",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Skipping revisions",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Writing quickly without review",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Ignoring grammar rules",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Speaking and Listening",
+          "sequence_order": 5,
+          "lessons": [
+            {
+              "title": "Effective Speaking, Listening & Presentation Skills",
+              "sequence_order": 1,
+              "text_content": "Speaking and listening are basic communication abilities which affect personal, academic and professional success. This module builds confidence in speaking and enhances listening skills.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Speaking and Listening — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "Which of the following is an assessment criterion for effective speaking mentioned in this lesson?",
+                "choices": [
+                  {
+                    "choice_text": "Confidence and pronunciation",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Handwriting",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Typing speed",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Vocabulary memorization only",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Why do communication skills matter, according to this lesson?",
+                "choices": [
+                  {
+                    "choice_text": "They help express ideas clearly and understand others",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "They are only useful in school",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "They replace the need for listening",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "They are unimportant in the workplace",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "When listening to an audio recording, what should learners identify first?",
+                "choices": [
+                  {
+                    "choice_text": "The main topic",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "The speaker's clothing",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The background noise",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The recording length only",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What is one key benefit of active listening mentioned in the module context?",
+                "choices": [
+                  {
+                    "choice_text": "It improves understanding and builds relationships",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "It has no real benefit",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It replaces the need to speak",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It only matters for teachers",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which combination of skills does this module aim to build?",
+                "choices": [
+                  {
+                    "choice_text": "Speaking and listening",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Only typing",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Only reading",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Only writing",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Entrepreneurship & Financial Literacy",
+      "description": "This course develops entrepreneurial thinking and financial management skills, enabling learners to identify opportunities, start businesses, manage finances, and make informed financial decisions.",
+      "is_published": true,
+      "modules": [
+        {
+          "title": "Entrepreneurship Fundamentals",
+          "sequence_order": 1,
+          "lessons": [
+            {
+              "title": "What is Entrepreneurship?",
+              "sequence_order": 1,
+              "text_content": "Entrepreneurship is a key driver of economic growth, providing jobs, addressing societal challenges, and fostering innovation.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Entrepreneurship Fundamentals — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "Who is an entrepreneur?",
+                "choices": [
+                  {
+                    "choice_text": "A person who starts and manages a business",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "A person who only works for others",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A person who avoids risk entirely",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A government employee",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which characteristic is most important for entrepreneurs?",
+                "choices": [
+                  {
+                    "choice_text": "Creativity and risk-taking",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Avoiding all risk",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Working alone at all times",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Following strict routines only",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What is innovation?",
+                "choices": [
+                  {
+                    "choice_text": "Introducing new ideas, products, or methods",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Repeating old methods exactly",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Avoiding change",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Copying competitors",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which is an example of a business opportunity?",
+                "choices": [
+                  {
+                    "choice_text": "Opening a business that meets customer needs",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Ignoring customer needs",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Avoiding the market entirely",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Closing a profitable business",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Why is creativity important for entrepreneurs?",
+                "choices": [
+                  {
+                    "choice_text": "It helps develop unique products and solve problems",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "It has no impact on business",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It only matters for artists",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It slows down decision-making",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is NOT one of the five characteristics of successful entrepreneurs listed in this lesson?",
+                "choices": [
+                  {
+                    "choice_text": "Creativity",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Persistence",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Procrastination",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Leadership",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What best describes the difference between creativity and innovation?",
+                "choices": [
+                  {
+                    "choice_text": "Creativity is generating new ideas; innovation is turning those ideas into practical products or services",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "They mean exactly the same thing",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Innovation comes before creativity",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Creativity only applies to art, not business",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Career Opportunity and Entrepreneurial Pathway",
+          "sequence_order": 2,
+          "lessons": [
+            {
+              "title": "Career Opportunity & Entrepreneurship as a Pathway",
+              "sequence_order": 1,
+              "text_content": "Career development encompasses making informed choices in employment, self-employment, and continuing career development throughout life.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Career Opportunity and Entrepreneurial Pathway — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "What is a career opportunity?",
+                "choices": [
+                  {
+                    "choice_text": "A chance to obtain employment or grow professionally",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "A one-time task with no future value",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A type of loan",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A school subject",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is a benefit of entrepreneurship?",
+                "choices": [
+                  {
+                    "choice_text": "Creates employment and generates income",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Guarantees no financial risk",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Requires no planning",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Eliminates the need for customers",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What best describes the difference between employment and self-employment?",
+                "choices": [
+                  {
+                    "choice_text": "Employment means working for an employer for wages, while self-employment means running your own business",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "They are identical in every way",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Self-employment means working for a government agency only",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Employment always pays more than self-employment",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Why might learners consider entrepreneurship as a career path?",
+                "choices": [
+                  {
+                    "choice_text": "It provides independence, income, and opportunities to create jobs",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "It guarantees instant wealth with no effort",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It requires no skills or planning",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It is only suitable for large corporations",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Reflecting on personal interests and goals when choosing a career path is an example of what?",
+                "choices": [
+                  {
+                    "choice_text": "Career planning",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Ignoring the future",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Random decision-making",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Avoiding responsibility",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Financial Literacy",
+          "sequence_order": 3,
+          "lessons": [
+            {
+              "title": "Budgeting, Saving, Banking Services & Credit",
+              "sequence_order": 1,
+              "text_content": "Financial literacy is the ability to understand and effectively use financial information to make informed decisions about managing money, including budgeting, saving, banking, and credit.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Financial Literacy — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "What is a budget?",
+                "choices": [
+                  {
+                    "choice_text": "A shopping list",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A financial plan",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "A bank account",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A loan",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which banking service keeps money safe?",
+                "choices": [
+                  {
+                    "choice_text": "Current account",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Savings account",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Credit card",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Loan",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What is saving?",
+                "choices": [
+                  {
+                    "choice_text": "Spending all your money",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Borrowing money",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Setting aside money for future use",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Buying expensive items",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is an example of credit?",
+                "choices": [
+                  {
+                    "choice_text": "Paying cash",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Savings account",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Bank loan",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Budget",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Why is financial planning important?",
+                "choices": [
+                  {
+                    "choice_text": "It increases debt",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It helps achieve financial goals",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "It wastes money",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It reduces income",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What is the main purpose of saving?",
+                "choices": [
+                  {
+                    "choice_text": "To spend later without planning",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To prepare for future needs and emergencies",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "To increase debt",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To avoid working",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following best defines financial literacy?",
+                "choices": [
+                  {
+                    "choice_text": "The ability to understand and manage money effectively through budgeting, saving, banking, and informed decisions",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "The ability to memorize bank account numbers",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The ability to avoid all forms of banking",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "The ability to spend without a plan",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is NOT a benefit of budgeting?",
+                "choices": [
+                  {
+                    "choice_text": "Controls spending",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Encourages saving",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Increases uncontrolled debt",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Helps achieve financial goals",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is a banking service?",
+                "choices": [
+                  {
+                    "choice_text": "Savings account",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Grocery shopping",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Job interview",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "School enrollment",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What is the key difference between saving and borrowing?",
+                "choices": [
+                  {
+                    "choice_text": "Saving means setting aside money for future use, while borrowing means receiving money from a lender to be repaid, usually with interest",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "They mean the same thing",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Borrowing always earns interest for the borrower",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Saving requires a loan",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Given a monthly income of $500, which budget allocation best reflects a balanced plan covering rent, food, transport, savings, and emergency fund?",
+                "choices": [
+                  {
+                    "choice_text": "Rent $150, Food $120, Transport $50, Savings $100, Emergency Fund $80",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Rent $400, Food $50, Transport $50, Savings $0, Emergency Fund $0",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Rent $0, Food $500, Transport $0, Savings $0, Emergency Fund $0",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Rent $250, Food $250, Transport $0, Savings $0, Emergency Fund $0",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Setting Personal Goals",
+          "sequence_order": 4,
+          "lessons": [
+            {
+              "title": "SMART Goals & Personal Goal Setting",
+              "sequence_order": 1,
+              "text_content": "Personal goals give direction, motivate, and provide a measure of success. This module covers goal setting, SMART goals, and short/long-term goal planning.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Setting Personal Goals — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "What is a personal goal?",
+                "choices": [
+                  {
+                    "choice_text": "A target an individual wants to achieve",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "A rule imposed by others with no personal input",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A random daily task",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A type of financial loan",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What does SMART stand for in goal setting?",
+                "choices": [
+                  {
+                    "choice_text": "Specific, Measurable, Achievable, Relevant, Time-bound",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Simple, Manageable, Actionable, Real, Timely",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Strategic, Meaningful, Adaptive, Reliable, Trackable",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Sequential, Modular, Adjustable, Repeatable, Testable",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is an example of a short-term goal?",
+                "choices": [
+                  {
+                    "choice_text": "Complete my accounting course this semester",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Retire in 30 years",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Become a nationally recognized expert over a lifetime",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Own multiple companies eventually",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following is an example of a long-term goal?",
+                "choices": [
+                  {
+                    "choice_text": "Become a successful lawyer and advocate",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Finish today's homework",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Attend tomorrow's class",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Reply to an email this afternoon",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which of the following goals best follows SMART principles?",
+                "choices": [
+                  {
+                    "choice_text": "I will save $50 every month for the next 12 months to start my own business.",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "I want to be rich someday.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "I will try to save some money eventually.",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "I want to have more money in general.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Business Idea and Opportunities",
+          "sequence_order": 5,
+          "lessons": [
+            {
+              "title": "Identifying, Evaluating & SWOT-Analyzing Business Ideas",
+              "sequence_order": 1,
+              "text_content": "All successful businesses start with a sound business idea and real market opportunities. This module covers evaluating business ideas, including SWOT analysis.",
+              "video_s3_url": null,
+              "estimated_minutes": 20
+            }
+          ],
+          "quiz": {
+            "title": "Business Idea and Opportunities — Quiz",
+            "passing_threshold": 70,
+            "questions": [
+              {
+                "question_text": "What is a business opportunity?",
+                "choices": [
+                  {
+                    "choice_text": "A chance to start a profitable business",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "A guaranteed loss",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A government tax form",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "A type of loan repayment plan",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which is a characteristic of a good business idea?",
+                "choices": [
+                  {
+                    "choice_text": "It meets customer needs and is profitable",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "It ignores customer needs",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It requires no market research",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "It cannot be evaluated",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "What does SWOT stand for?",
+                "choices": [
+                  {
+                    "choice_text": "Strengths, Weaknesses, Opportunities, Threats",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Sales, Wages, Operations, Taxes",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Strategy, Work, Output, Time",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Strengths, Wins, Options, Trends",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Which factor most influences the choice of a business idea?",
+                "choices": [
+                  {
+                    "choice_text": "Market demand",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Personal mood",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Random selection",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Weather conditions",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "Why should entrepreneurs evaluate business ideas before starting?",
+                "choices": [
+                  {
+                    "choice_text": "To determine their feasibility and potential success",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Evaluation is unnecessary",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To make the process take longer with no benefit",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "To avoid ever starting a business",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "In a SWOT analysis for a small clothing business, which of the following would be classified as a 'Threat'?",
+                "choices": [
+                  {
+                    "choice_text": "Strong competition and rising costs of materials",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "High-quality products",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Good customer service",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Growing online market",
+                    "is_correct": false
+                  }
+                ]
+              },
+              {
+                "question_text": "In the same SWOT analysis, which of the following would be classified as an 'Opportunity'?",
+                "choices": [
+                  {
+                    "choice_text": "Growing online market and increasing demand for fashion",
+                    "is_correct": true
+                  },
+                  {
+                    "choice_text": "Limited capital",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "New brand with little recognition",
+                    "is_correct": false
+                  },
+                  {
+                    "choice_text": "Strong competition",
+                    "is_correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
